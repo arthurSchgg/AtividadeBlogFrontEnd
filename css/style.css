@@ -28,61 +28,6 @@ main {
     padding: 20px;
 }
 
-header {
-    background-color: #000000;
-}
-
-.logoBlog {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px 10px 10px 30px;
-}
-
-.logoBlog-texto {
-    display: flex;
-    align-items: center;
-}
-
-.logoBlog-texto p {
-    font-size: 25px;
-}
-
-.logoBlog-links {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.logoBlog-links a {
-    font-size: 18px;
-}
-
-.btn-login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-size: 18px;
-    font-family: 'Anton', sans-serif;
-    padding: 5px 15px;
-    border-radius: 2px;
-    text-decoration: none;
-    margin: 0px 20px 0px 10px;
-}
-
-.btn-login:hover {
-    background-color: #E0E0E0;
-}
-
-p {
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ffffff;
-}
-
 header p,
 a {
     font-family: 'Anton', sans-serif;
@@ -93,6 +38,47 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.container {
+    background-color: #000000de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 10px 10px 30px;
+    position: sticky;
+        top: 0;
+        z-index: 100;
+}
+
+.logoBlog {
+    display: flex;
+    align-items: center;
+}
+
+.logoBlog p {
+    font-size: 25px;
+}
+
+.logoBlog-links {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+        margin: 0px 20px 0px 0px;
+    gap: 50px;
+}
+
+.logoBlog-links a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
 }
 
 span {
@@ -141,8 +127,10 @@ span {
 
 .btn-artigo-completo {
     background-color: #000000;
+    color: #ffffff;
     padding: 10px;
     margin: 0px 10px 10px 10px;
+    transition: all 0.3s ease;
 }
 
 .editorial-em-destaque-img {
@@ -162,6 +150,7 @@ span {
     flex-shrink: 0;
     width: 320px;
 }
+
 .sidebar {
     align-self: self-start;
     background-color: #000000;
@@ -170,6 +159,7 @@ span {
     padding: 10px;
     margin: 30px 0px 0px 0px;
     border-radius: 2px;
+    box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-titulo {
@@ -178,7 +168,8 @@ span {
     margin-bottom: 10px;
 }
 
-.sidebar-titulo p {
+.sidebar-titulo a {
+    color: #ffffff;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -226,6 +217,7 @@ span {
 
 .numero-card-1:hover {
     background-color: #5858585e;
+    transform: scale(1.05);
 }
 
 .numero-valor-1 {
@@ -251,6 +243,7 @@ span {
 
 .numero-card-2:hover {
     background-color: #ccbfbfcc;
+    transform: scale(1.05);
 }
 
 .numero-valor-2 {
@@ -264,6 +257,7 @@ span {
     color: #333131;
     margin: 0;
 }
+
 .sidebar-categorias {
     max-width: 100%;
     padding: 10px;
@@ -289,12 +283,15 @@ span {
     height: auto;
     padding: 8px;
     margin: 0px 10px 20px 15px;
+    box-shadow: 0px 15px 15px 0 rgba(0, 0, 0, 0.2);
+        ;
     transition: all 0.3s ease;
 }
 
 .item-lista:hover {
     color: #FFFFFF;
     background-color: #000000;
+    transform: scale(1.1);
 }
 
 .corpo-site {
@@ -332,29 +329,31 @@ span {
 
 .artigo-1 {
     display: flex;
-    flex: 0 0 calc(33.333% - 14px);
+    flex: 0 0 calc(33.3333% - 1rem);
     flex-direction: column;
     width: auto;
     height: auto;
     border: 2px solid transparent;
+    box-shadow: 0px 15px 15px 0 rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease;
-}
-
-.artigo-1 a {
-    margin-top: auto;
 }
 
 .artigo-1:hover {
     border-color: #000000;
+    transform: scale(1.03);
 }
 
 .artigo-1 img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     display: block;
+    padding: 10px 10px 10px 10px;
 }
 
 .artigo-1-tudo {
+    display: flex;
+        flex-direction: column;
+        flex: 1;
     padding: 10px;
 }
 
@@ -383,8 +382,100 @@ span {
 .btn-artigo-1 {
     color: #000000;
     margin: 10px 0px 0px 0px;
+    margin-top: auto;
+    }
+    
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-top: 2px solid #000000;
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 10px 5px 0px;
+        padding: 20px 10px 0px 0px;
+    }
+    
+    footer p,
+    a {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    .img-footer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    footer img {
+        width: auto;
+        height: 40px;
+        transition: all 0.3s ease;
+    }
+    
+    footer img:hover {
+        transform: scale(1.1);
+    }
+    
+    .corpo-artigo {
+        display: flex;
+        flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+    
+.conteudo-artigo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
 }
 
-footer p {
+.titulo-Artigo-1 p {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    max-width: 90%;
     color: #000000;
+    margin: 0px 0px 20px 0px;
+}
+
+.subtitulo-Artigo-1 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    max-width: 100%;
+    color: #1f1e1ed7;
+    margin: 0px 0px 20px 0px;
+}
+
+.data-Artigo-1 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    color: #1f1e1e94;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 2px solid #000000;
+    margin: 0px 0px 20px 0px;
+}
+
+.texto-Artigo-1 p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    max-width: 100%;
+    color: #000000;
+}
+.img-Artigo-1 {
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.conteudo-artigo img {
+    width: 100%;
+    height: 15px;
+    border-radius: 2px;
+    display: block;
+    margin: 10px 0px 10px 0px;
 }
