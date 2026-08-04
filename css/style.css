@@ -496,3 +496,71 @@ footer img:hover {
         color: #000000;
         font-size: 40px;
 }
+
+.corpo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #000000;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+}
+
+.form-grupo label {
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+}
+
+.form-grupo input,
+textarea {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: #ffffff;
+}
+
+.form-grupo textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    padding: 14px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-enviar:hover {
+    opacity: 0.65;
+}

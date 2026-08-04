@@ -7,20 +7,57 @@
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página inicial</title>
+        <title>Contato</title>
     </head>
     <body>
-        <header class="logoBlog">
-            <div id="logoBlog-texto">
+        <header class="container">
+            <div class="logoBlog">
                 <p>Universo Alvinegro</p>
             </div>
-            <div id="logoBlog-links">
+            <div class="logoBlog-links">
                 <a href="/index.html">Início</a>
                 <a href="/paginas/sobre.html">Sobre</a>
                 <a href="/paginas/contato.html">Contato</a>
             </div>
         </header>
-<body>
+    
+        <main>
+            <div class="corpo-site">
+                <div class="corpo-form">
+                    <form class="form-contato">
+                        <div class="form-grupo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+    
+                        <div class="form-grupo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+    
+                        <div class="form-grupo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn-enviar">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div>
+                <p>Todos os direitos reservados Universo Alvinegro 2026 © <a href="/paginas/contato.html">Nosso Contato</a></p>
+            </div>
+    
+            <div class="img-footer">
+                <a href="#"><img src="/img/insta.png" alt="Imagem do instagram"></a>
+                <a href="#"><img src="/img/face.png" alt="Imagem do facebook"></a>
+                <a href="#"><img src="/img/linke.png" alt="Imagem do linkedlin"></a>
+            </div>
+        </footer>
+    </body>
     
 </body>
 </html>
